@@ -1,0 +1,73 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 16px 0;
+  border: 1px solid #f5c6cb;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile h1 {
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 28px;
+}
+
+.profileUpdate {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.usersList {
+  margin-top: 16px;
+}
+
+.usersList h2 {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 24px;
+}
+
+.userCardContainer {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.cardUpdate {
+  margin-top: 8px;
+  align-self: flex-end;
+}
+
+.emptyState {
+  padding: 32px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+  font-size: 16px;
+} 

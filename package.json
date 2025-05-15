@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "backend-repo",
+    "frontend-repo",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "dev:frontend": "turbo dev --filter=frontend-repo",
+    "dev:backend": "turbo dev --filter=backend-repo",
+    "dev:emulators": "cd backend-repo && firebase emulators:start",
+    "dev:local": "concurrently \"npm run dev:emulators\" \"npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.16"
+  },
+  "packageManager": "npm@10.2.3"
+} 

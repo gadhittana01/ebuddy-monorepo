@@ -1,0 +1,43 @@
+{
+  "name": "frontend-repo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbopack",
+    "dev:emulators": "firebase emulators:start",
+    "dev:local": "concurrently \"npm run dev\" \"npm run dev:emulators\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.1",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
+    "@mui/material-nextjs": "^7.1.0",
+    "@mui/system": "^7.1.0",
+    "@reduxjs/toolkit": "^2.8.1",
+    "@repo/shared": "*",
+    "axios": "^1.9.0",
+    "firebase": "^11.7.1",
+    "next": "^15.3.2",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/eslintrc": "^3",
+    "@mui/material-pigment-css": "^7.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5"
+  }
+}
