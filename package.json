@@ -13,7 +13,8 @@
     "dev:frontend": "turbo dev --filter=frontend-repo",
     "dev:backend": "turbo dev --filter=backend-repo",
     "dev:emulators": "cd backend-repo && firebase emulators:start",
-    "dev:local": "concurrently \"npm run dev:emulators\" \"npm run dev\""
+    "dev:local": "concurrently \"npm run dev:emulators\" \"npm run dev\"",
+    "setup": "npm install && concurrently \"cd backend-repo && npm install\" \"cd frontend-repo && npm install\" \"cd packages/shared && npm install\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
