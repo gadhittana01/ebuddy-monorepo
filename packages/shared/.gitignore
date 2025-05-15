@@ -9,11 +9,6 @@ lib
 build
 .turbo
 
-# Environment variables
-.env
-.env.*
-!.env.example
-
 # Logs
 *.log
 npm-debug.log*
